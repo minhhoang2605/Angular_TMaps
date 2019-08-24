@@ -1,0 +1,7 @@
+<div id="map-container" class="map-container" *ngIf="map" 
+        (click)="addPinOnClick($event)">
+    <img id="map-img" class="map-img" src={{map.url}}>
+    <div class="timer" id="timer" style="cursor: pointer" (click)="runClock()">
+        50:00
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="grid-container">
+    <header class="header">
+        <ul class="navbar"> 
+            <li class="navbar-item">
+                <a routerLink="/dashboard/welcome">TarkovMaps</a>
+            </li>
+            <li class="navbar-item">
+                <a routerLink="/dashboard/about">About</a>
+            </li>
+        </ul>
+    </header>
+    <aside class="sidenav">
+        <img title="welcome" src="../assets/logo.png" style="cursor: pointer"
+            routerLink="/dashboard/welcome">
+        <ul class="sidenav_list">
+            <li class="sidenav_list-item" *ngFor="let map of maps" 
+                routerLink="/dashboard/map-detail/{{map.id}}">
+                {{map.name}}
+            </li>
+        </ul>
+    </aside>
+    <main class="main">
+        <router-outlet></router-outlet>
+    </main>
+</div>

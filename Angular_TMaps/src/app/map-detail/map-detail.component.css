@@ -1,0 +1,22 @@
+.map-container {
+    position: relative;
+}
+
+.map-img{
+    max-height: 950px;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+.timer {
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 70px;
+    color: red;
+    background: rgba(0,0,0,0.6);
+    padding: 10px;
+    font-family: 'Orbitron', sans-serif;
+}
