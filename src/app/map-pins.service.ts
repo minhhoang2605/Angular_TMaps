@@ -14,6 +14,7 @@ export class PinsService {
   }
 
   addPin(pin: Pin): void {
+    pin.pinId = this.pins.length;
     this.pins.push(pin);
   }
 }
